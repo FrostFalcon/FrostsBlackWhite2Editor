@@ -28,6 +28,8 @@ __Patching:__ You can create and apply patches to send other people hacks. Norma
 
 __Custom Hame Modes:__ These use blanket statements to apply special rules to the game. You can read more about them in the Lite version of the editor.
 
+__NARC Replace:__ NARCs are a special file type used to store data in roms. They are also what the editor works with behind the scenes. This feature lets you replace an entire NARC file with the same one from another rom. This may come in handy if you broke your rom and you don't want to revert everything to a previous version. You can see what all of the NARCs are here: https://projectpokemon.org/home/docs/gen-5/b2w2-file-system-r8/
+
 __Auto Loading:__ A simple quality of life feature that will automatically load the given rom whenever you start the editor.
 
 # Slay the Spoink
