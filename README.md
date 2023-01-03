@@ -1,4 +1,4 @@
-# FrostsBlackWhite2Editor
+# Frost's Black and White 2 Editor
 
 Featured here is the editor program that I made I use to hack pokemon Black and White 2.
 
