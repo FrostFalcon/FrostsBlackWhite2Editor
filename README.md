@@ -86,7 +86,7 @@ Finally, note that this hack is still in development. The current version is 0.9
 
 The editor may not be compatible with some other editors. Attempting to use this in conjunction with another editor to make a single hack likely won't work.
 
-Script and overworld editing is unstable when working with existing story related elements. While these tools are very powerful and can do a lot in terms of writing custom scenes, even working in the same areas as certain cutscenes make break them.
+Script and overworld editing is unstable when working with existing story related elements. While these tools are very powerful and can do a lot in terms of writing custom scenes, even working in the same areas as certain cutscenes may break them.
 
 The patch files are specifically made to work with the editor. As such, they won't work with any other patching system.
 
