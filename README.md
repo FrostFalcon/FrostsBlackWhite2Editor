@@ -40,7 +40,7 @@ Along the way, you'll choose which path you want to take by talking to the npcs 
 
 After applying the hack to your rom, start by saving your run right away. Every time you want to start a new run, you'll have to reapply the hack with the editor, but you can restart the run from this save. For each run, you'll start by talking to your mom. She will give you a starter and a few items and transport your to the first room. From there you will progress through each room by interacting with the NPC in front of you, then choosing one of the NPCs in the back who will take you to the next room. If you white out, you lose, and you have to restart the run.
 
-# NCB2v0.9.bw2Patch
+# NCB2v0.10.2.bw2Patch
 
 This is the main rom hack for black 2 (untested for white 2) that I made the editor for. It features revamped trainer battles, pokemon reworks, and massively expanded route encounters all specifically designed with a nuzzlocke and level caps in mind while keeping the core of the game intact. You can apply this patch to a vanilla rom (which is not provided) and try it yourself if you are interested in a challenge. This is also compatable with Slay the Spoink, helping make several pokemon stronger and more interesting.
 
@@ -52,7 +52,7 @@ The second addition comes after you complete the quest in Flocessy Ranch. Going 
 
 Keep in mind this hack is extremely difficult. You shouldn't expect to beat it on your first few tries, but the increased pokemon variety should ensure that no two runs feel the same. Also the pokemon were balanced with strict level caps in mind, so I highly suggest following them. The level caps are as follows:
 
-Flocessy Ranch Rival - 10
+Flocessy Ranch Rival - 9
 
 Aspertia Gym - 14
 
@@ -72,13 +72,13 @@ Oppelucid Gym - 50
 
 Humilau Gym - 56
 
-Zinzolin and Colress - 64
+Zinzolin and Colress - 62
 
-Ghetsis - 66
+Ghetsis - 64
 
-Elite 4 - 74
+Elite 4 - 70
 
-Champion - 75
+Champion - 72
 
 Finally, note that this hack is still in development. The current version is 0.9, which has the main story progression mostly complete. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
 
