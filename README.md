@@ -32,7 +32,7 @@ __NARC Replace:__ NARCs are a special file type used to store data in roms. They
 
 __Auto Loading:__ A simple quality of life feature that will automatically load the given rom whenever you start the editor.
 
-# Slay the Spoink
+# Slay the Spoink (currently broken)
 
 This is a custom gamemode inspired by Slay the Spire which drastically changes how the game is played. It can be applied through either the main editor or lite editor. This hack replaces the main story entirely. Instead, you fight through randomly generated rooms that progressively get stronger. Every 12 rooms, you'll fight a boss, ending with either Iris or Ghetsis.
 
