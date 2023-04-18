@@ -1,6 +1,6 @@
 # Frost's Black and White 2 Editor
 
-Featured here is the editor program that I made I use to hack pokemon Black and White 2.
+Featured here is the editor program that I made and use to hack pokemon Black and White 2.
 
 The main editor contains several features, such as pokemon, moves, trainers, and even script editing. It also contains a few special game modes for those looking for new challenge runs and a custom patcher for transfering hacks efficiently.
 
