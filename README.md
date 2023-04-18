@@ -12,7 +12,7 @@ Note that this has not been thoroughly tested outside of personal use for my own
 
 __Pokemon Editor:__ Lets you edit the base stats, movesets, tms, and evolutions of a pokemon. Also lets you modify the sprite palette of a pokemon. Palette editing is less polished, so use with caution.
 
-__Move Editor:__ Lets you edit the data of attacks such as damage, type, and extra effects. Adding moves and copying animations are experimental, so use these with caution.
+__Move Editor:__ Lets you edit the data of attacks such as damage, type, and extra effects. You can also change the name and description of moves and modify their animations to some extent. BW2 doesn't like adding more moves to the game, but this editor is capable of creating entirely new moves by replacing existing ones.
 
 __Text Editor:__ Lets you edit in game text including story text and misc text.
 
