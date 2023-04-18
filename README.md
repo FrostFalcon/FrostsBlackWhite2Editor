@@ -46,7 +46,7 @@ This is the main rom hack for black 2 (untested for white 2) that I made the edi
 
 There are two major additions to the progression of this rom hack:
 
-First, before you meet Bianca to receive your starter, You can enter the house to the right of the lookout and talk to the ditto there. It will give you a random starter from any generation. After receiving your starter, you can go back to Bianca and continue as normal. You still have to get your usual starter to progress the story. In a typical run, I pick the starter with the same element as the one ditto gave me, (this is important so your rival gets the right starter) and release it after the first rival.
+First, before you meet Bianca to receive your starter, You can enter the house to the right of the lookout and talk to the ditto there. It will give you a random starter from any generation. After receiving your starter, you can go back to Bianca and continue as normal. You still have to get your usual starter to progress the story. In a typical run, I pick the starter with the same element as the one ditto gave me, (this is important so your rival gets the right starter) and release it after the first rival battle.
 
 The second addition comes after you complete the quest in Flocessy Ranch. Going north of the trainer school into Pledge Grove, you'll find a scientist studying the rock formation. He is a difficult optional trainer that you can fight before the first gym. Beating him will reward you with a fishing rod which can be used to get extra early game encounters in Aspertia City and Virbank City. The rest of the game plays out as normal.
 
@@ -80,7 +80,7 @@ Elite 4 - 70
 
 Champion - 72
 
-Finally, note that this hack is still in development. The current version is 0.9, which has the main story progression mostly complete. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
+Finally, note that this hack is still in development. The current version is 0.10.2, which has the main story progression mostly complete. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
 
 # Some notable issues with the editor:
 
