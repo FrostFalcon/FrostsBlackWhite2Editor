@@ -1,6 +1,6 @@
 # Frost's Black and White 2 Editor
 
-Featured here is the editor program that I made I use to hack pokemon Black and White 2.
+Featured here is the editor program that I made and use to hack pokemon Black and White 2.
 
 The main editor contains several features, such as pokemon, moves, trainers, and even script editing. It also contains a few special game modes for those looking for new challenge runs and a custom patcher for transfering hacks efficiently.
 
@@ -12,7 +12,7 @@ Note that this has not been thoroughly tested outside of personal use for my own
 
 __Pokemon Editor:__ Lets you edit the base stats, movesets, tms, and evolutions of a pokemon. Also lets you modify the sprite palette of a pokemon. Palette editing is less polished, so use with caution.
 
-__Move Editor:__ Lets you edit the data of attacks such as damage, type, and extra effects. Adding moves and copying animations are experimental, so use these with caution.
+__Move Editor:__ Lets you edit the data of attacks such as damage, type, and extra effects. You can also change the name and description of moves and modify their animations to some extent. BW2 doesn't like adding more moves to the game, but this editor is capable of creating entirely new moves by replacing existing ones.
 
 __Text Editor:__ Lets you edit in game text including story text and misc text.
 
@@ -46,7 +46,7 @@ This is the main rom hack for black 2 (untested for white 2) that I made the edi
 
 There are two major additions to the progression of this rom hack:
 
-First, before you meet Bianca to receive your starter, You can enter the house to the left of the lookout and talk to the ditto there. It will give you a random starter from any generation. After receiving your starter, you can go back to Bianca and continue as normal. You still have to get your usual starter to progress the story. In a typical run, I pick the starter with the same element as the one ditto gave me, (this is important so your rival gets the right starter) and release it after the first rival.
+First, before you meet Bianca to receive your starter, You can enter the house to the right of the lookout and talk to the ditto there. It will give you a random starter from any generation. After receiving your starter, you can go back to Bianca and continue as normal. You still have to get your usual starter to progress the story. In a typical run, I pick the starter with the same element as the one ditto gave me, (this is important so your rival gets the right starter) and release it after the first rival battle.
 
 The second addition comes after you complete the quest in Flocessy Ranch. Going north of the trainer school into Pledge Grove, you'll find a scientist studying the rock formation. He is a difficult optional trainer that you can fight before the first gym. Beating him will reward you with a fishing rod which can be used to get extra early game encounters in Aspertia City and Virbank City. The rest of the game plays out as normal.
 
@@ -80,7 +80,7 @@ Elite 4 - 70
 
 Champion - 72
 
-Finally, note that this hack is still in development. The current version is 0.9, which has the main story progression mostly complete. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
+Finally, note that this hack is still in development. The current version is 0.10.2, which has the main story progression mostly complete. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
 
 # Some notable issues with the editor:
 
