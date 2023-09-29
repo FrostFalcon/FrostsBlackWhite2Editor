@@ -40,7 +40,7 @@ Along the way, you'll choose which path you want to take by talking to the npcs 
 
 After applying the hack to your rom, start by saving your run right away. Every time you want to start a new run, you'll have to reapply the hack with the editor, but you can restart the run from this save. For each run, you'll start by talking to your mom. She will give you a starter and a few items and transport your to the first room. From there you will progress through each room by interacting with the NPC in front of you, then choosing one of the NPCs in the back who will take you to the next room. If you white out, you lose, and you have to restart the run.
 
-# NCB2bw2Patch
+# NCB2.bw2Patch
 
 This is the main rom hack for black 2 (untested for white 2) that I made the editor for. It features revamped trainer battles, pokemon reworks, and massively expanded route encounters all specifically designed with a nuzzlocke and level caps in mind while keeping the core of the game intact. You can apply this patch to a vanilla rom (which is not provided) and try it yourself if you are interested in a challenge. This is also compatable with Slay the Spoink, helping make several pokemon stronger and more interesting.
 
