@@ -47,10 +47,15 @@ This is the main rom hack for black 2 (untested for white 2) that I made the edi
 There are a few major additions to the progression of this rom hack:
 
 First, before you meet Bianca to receive your starter, You can enter the house to the right of the lookout and talk to the ditto there. It will give you a random starter from any generation. After receiving your starter, you can go back to Bianca and continue as normal. You still have to get your usual starter to progress the story. In a typical run, I pick the starter with the same element as the one ditto gave me, (this is important so your rival gets the right starter) and release it after the first rival battle.
-After you complete the quest in Flocessy Ranch. Going north of the trainer school into Pledge Grove, you'll find a scientist studying the rock formation. He is a difficult optional trainer that you can fight before the first gym. Beating him will reward you with a fishing rod which can be used to get extra early game encounters in Aspertia City and Virbank City. The rest of the game plays out as normal.
+
+After you complete the quest in Flocessy Ranch. Going north of the trainer school into Pledge Grove, you'll find a scientist studying the rock formation. He is a difficult optional trainer that you can fight before the first gym. Beating him will reward you with a fishing rod which can be used to get extra early game encounters in Aspertia City and Virbank City.
+
 After you beat the first gym, there's an optional fight with Alder with a powerful reward that can only be fought before you get the second gym badge.
+
 Pinwheel Forest and Nacrene City are now accessible during the game. Keep in mind there are many high level trainers here. You are meant to start exploring these areas before you beat the bug gym and come back after you beat it.
+
 There is an optional story event in Nacrene City where you fight Lenora and Cheren in a double battle. This also has a strong reward for beating it and becomes unavailable after the ground gym.
+
 Clay Tunnel is also accessible now
 
 Keep in mind this hack is extremely difficult. You shouldn't expect to beat it on your first few tries, but the increased pokemon variety should ensure that no two runs feel the same. Also the pokemon were balanced with strict level caps in mind, so I highly suggest following them. The level caps are as follows:
