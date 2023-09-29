@@ -1,0 +1,18 @@
+0.10.2
+
+ - Introduced new moves for certain pokemon
+ - Large scale encounter redistribution
+
+
+
+0.12.2
+
+ - Added Pinwheel Forest, Nacrene City, and Clay Tunnel to the main playthrough
+ - Added an optional fight with Alder between the first and second gym
+ - Improved starter house
+
+
+
+0.13.0
+
+ - Added story content to Nacrene City
