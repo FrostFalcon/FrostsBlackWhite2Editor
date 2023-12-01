@@ -1,0 +1,161 @@
+<HTML lang="en">
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>Changelog</TITLE>
+	</HEAD>
+<font size = "4" outline = "4px solid white">
+	<script>
+
+		class PokemonEntry
+		{
+			constructor(name, sprID, types, forms, desc)
+			{
+				this.name = name;
+				this.sprID = sprID;
+				this.types = types;
+				this.forms = forms;
+				this.desc = desc;
+			}
+		}
+
+		var pokemon = {
+			"Charmander" : new PokemonEntry("Charmander", "004", ["Fire", "Fire"], ["Charmander", "Charmeleon", "Charizard"], "<span style='font-size: 25px;'>Charmander - 4</span><br><br><br><br><strong>Level up moves:</strong><br> - Removed Flame Burst at lv 23<br> + Added Incinerate at lv 14<br> + Added DragonBreath at lv 27<br> = Moved Fire Fang from lv 27 to lv 24<br><br>"),
+			"Charmeleon" : new PokemonEntry("Charmeleon", "005", ["Fire", "Fire"], ["Charmander", "Charmeleon", "Charizard"], "<span style='font-size: 25px;'>Charmeleon - 5</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Att: 64 => 72</font><br><br><br><strong>Level up moves:</strong><br> - Removed Flame Burst at lv 24<br> + Added Incinerate at lv 14<br> + Added DragonBreath at lv 27<br> = Moved Fire Fang from lv 28 to lv 24<br><br>"),
+			"Charizard" : new PokemonEntry("Charizard", "006", ["Fire", "Dragon"], ["Charmander", "Charmeleon", "Charizard"], "<span style='font-size: 25px;'>Charizard - 6</span><br><br>Type: <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/fire.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/flying.gif'> -> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/fire.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/dragon.gif'><br><br><br><br><strong>Level up moves:</strong><br> - Removed Flame Burst at lv 24<br> + Added Incinerate at lv 14<br> + Added DragonBreath at lv 27<br> + Added Outrage at lv 48<br> = Moved Fire Fang from lv 28 to lv 24<br> = Moved Air Slash from lv 48 to lv 45<br><br>"),
+			"Pidgey" : new PokemonEntry("Pidgey", "016", ["Normal", "Flying"], ["Pidgey", "Pidgeotto", "Pidgeot"], "<span style='font-size: 25px;'>Pidgey - 16</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Gust from lv 9 to lv 7<br><br>"),
+			"Clefairy" : new PokemonEntry("Clefairy", "035", ["Normal", "Normal"], ["Cleffa", "Clefairy", "Clefable"], "<span style='font-size: 25px;'>Clefairy - 35</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Def: 48 => 53</font><br><br><br>"),
+			"Clefable" : new PokemonEntry("Clefable", "036", ["Normal", "Normal"], ["Cleffa", "Clefairy", "Clefable"], "<span style='font-size: 25px;'>Clefable - 36</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 95 => 100</font><br><font color='#005000'>Base Def: 73 => 78</font><br><font color='#005000'>Base SpA: 85 => 95</font><br><br><br>"),
+			"Jigglypuff" : new PokemonEntry("Jigglypuff", "039", ["Normal", "Normal"], ["Igglybuff", "Jigglypuff", "Wigglytuff"], "<span style='font-size: 25px;'>Jigglypuff - 39</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Att: 45 => 50</font><br><font color='#005000'>Base Def: 20 => 40</font><br><font color='#005000'>Base SpA: 45 => 50</font><br><font color='#005000'>Base SpD: 25 => 45</font><br><br><br><strong>Level up moves:</strong><br> + Added Wish at lv 32<br> = Moved Body Slam from lv 33 to lv 34<br><br>"),
+			"Wigglytuff" : new PokemonEntry("Wigglytuff", "040", ["Normal", "Normal"], ["Igglybuff", "Jigglypuff", "Wigglytuff"], "<span style='font-size: 25px;'>Wigglytuff - 40</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 140 => 150</font><br><font color='#005000'>Base Def: 45 => 55</font><br><font color='#005000'>Base SpD: 50 => 60</font><br><br><br><strong>Level up moves:</strong><br> + Added Wish at lv 32<br> = Moved Body Slam from lv 33 to lv 34<br><br>"),
+			"Horsea" : new PokemonEntry("Horsea", "116", ["Water", "Water"], ["Horsea", "Seadra", "Kingdra"], "<span style='font-size: 25px;'>Horsea - 116</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Def: 60 => 65</font><br><font color='#005000'>Base SpA: 60 => 65</font><br><br><br>"),
+			"Seadra" : new PokemonEntry("Seadra", "117", ["Water", "Water"], ["Horsea", "Seadra", "Kingdra"], "<span style='font-size: 25px;'>Seadra - 117</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Def: 85 => 95</font><br><font color='#005000'>Base SpA: 85 => 95</font><br><br><br>"),
+			"Snorlax" : new PokemonEntry("Snorlax", "143", ["Normal", "Normal"], ["Munchlax", "Snorlax"], "<span style='font-size: 25px;'>Snorlax - 143</span><br><br><br><br><strong>Level up moves:</strong><br> + Added Slack Off at lv 38<br><br>"),
+			"Meganium" : new PokemonEntry("Meganium", "154", ["Grass", "Psychic"], ["Chikorita", "Bayleef", "Meganium"], "<span style='font-size: 25px;'>Meganium - 154</span><br><br>Type: <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/ghost.gif'> -> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/psychic.gif'><br><br><br><br><strong>Level up moves:</strong><br> - Removed Soul Leech at lv 36<br> + Added Lucky Chant at lv 36<br><br>"),
+			"Typhlosion" : new PokemonEntry("Typhlosion", "157", ["Fire", "Ice"], ["Cyndaquil", "Quilava", "Typhlosion"], "<span style='font-size: 25px;'>Typhlosion - 157</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 80 => 86</font><br><font color='#500000'>Base Spe: 110 => 104</font><br><br><br>"),
+			"Lanturn" : new PokemonEntry("Lanturn", "171", ["Water", "Electric"], ["Chinchou", "Lanturn"], "<span style='font-size: 25px;'>Lanturn - 171</span><br><br><br><br><strong>Level up moves:</strong><br> + Added Moonlight at lv 44<br><br>"),
+			"Hoppip" : new PokemonEntry("Hoppip", "187", ["Grass", "Flying"], ["Hoppip", "Skiploom", "Jumpluff"], "<span style='font-size: 25px;'>Hoppip - 187</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Gust from lv 10 to lv 9<br> = Moved Mega Drain from lv 12 to lv 11<br> = Moved Stun Spore from lv 14 to lv 13<br><br>"),
+			"Skiploom" : new PokemonEntry("Skiploom", "188", ["Grass", "Flying"], ["Hoppip", "Skiploom", "Jumpluff"], "<span style='font-size: 25px;'>Skiploom - 188</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Gust from lv 10 to lv 9<br> = Moved Mega Drain from lv 12 to lv 11<br> = Moved Stun Spore from lv 14 to lv 13<br><br>"),
+			"Jumpluff" : new PokemonEntry("Jumpluff", "189", ["Grass", "Flying"], ["Hoppip", "Skiploom", "Jumpluff"], "<span style='font-size: 25px;'>Jumpluff - 189</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Gust from lv 10 to lv 9<br> = Moved Mega Drain from lv 12 to lv 11<br> = Moved Stun Spore from lv 14 to lv 13<br><br>"),
+			"Treecko" : new PokemonEntry("Rowlet", "252", ["Grass", "Flying"], ["Treecko", "Grovyle", "Sceptile"], "<span style='font-size: 25px;'>Treecko - 252</span><br><br>Type: <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> -> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/flying.gif'><br><strong>Abilities:</strong> Sniper, Super Luck -> Sniper, Overcoat<br><strong>Hidden Ability:</strong> Unburden -> Early Bird<br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 40 => 58</font><br><font color='#005000'>Base Def: 45 => 55</font><br><font color='#500000'>Base SpA: 60 => 50</font><br><font color='#500000'>Base Spe: 60 => 42</font><br><br><br><strong>Level up moves:</strong><br> - Removed Pound at lv 1<br> - Removed Leer at lv 1<br> - Removed Quick Attack at lv 11<br> - Removed Twister at lv 16<br> - Removed Mega Drain at lv 20<br> - Removed Giga Drain at lv 46<br> - Removed Energy Ball at lv 51<br> + Added Tackle at lv 1<br> + Added Growl at lv 1<br> + Added Peck at lv 9<br> + Added Astonish at lv 11<br> + Added Ominous Wind at lv 16<br> + Added Foresight at lv 18<br> + Added Pluck at lv 22<br> + Added Roost at lv 25<br> + Added Sucker Punch at lv 28<br> + Added FeatherDance at lv 38<br> + Added Nasty Plot at lv 41<br> + Added Leaf Storm at lv 45<br> + Added Brave Bird at lv 49<br> = Moved Razor Leaf from lv 6 to lv 7<br> = Moved Leaf Blade from lv 30 to lv 32<br><br><strong>TMs:</strong><br> + TM16 Light Screen<br> + TM49 Echoed Voice<br> + TM65 Shadow Claw<br> + TM83 Work Up<br> - TM28 Dig<br> - TM31 Brick Break<br> - TM39 Rock Tomb<br> - TM40 Aerial Ace<br> - TM56 Fling<br> - TM62 Acrobatics<br> - TM70 Flash<br> - TM80 Rock Slide<br> - TM94 Rock Smash<br> - HM04 Strength<br><br>"),
+			"Grovyle" : new PokemonEntry("Dartrix", "253", ["Grass", "Flying"], ["Treecko", "Grovyle", "Sceptile"], "<span style='font-size: 25px;'>Grovyle - 253</span><br><br>Type: <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> -> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/flying.gif'><br><strong>Abilities:</strong> Sniper, Super Luck -> Sniper, Overcoat<br><strong>Hidden Ability:</strong> Unburden -> Early Bird<br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 50 => 70</font><br><font color='#005000'>Base Att: 65 => 80</font><br><font color='#005000'>Base Def: 50 => 65</font><br><font color='#500000'>Base SpA: 85 => 70</font><br><font color='#005000'>Base SpD: 65 => 70</font><br><font color='#500000'>Base Spe: 90 => 52</font><br>Hp EVs: 0 -> 2<br><br><br><strong>Level up moves:</strong><br> - Removed Pound at lv 1<br> - Removed Leer at lv 1<br> - Removed Absorb at lv 1, 6<br> - Removed Quick Attack at lv 1, 11<br> - Removed Twister at lv 16<br> - Removed Air Cutter at lv 18<br> - Removed Mega Drain at lv 22<br> - Removed Night Slash at lv 27<br> - Removed Drill Run at lv 40<br> - Removed Dragon Pulse at lv 44<br> + Added Tackle at lv 1<br> + Added Growl at lv 1<br> + Added Razor Leaf at lv 7<br> + Added Peck at lv 9<br> + Added Astonish at lv 11<br> + Added Focus Energy at lv 14<br> + Added Ominous Wind at lv 16<br> + Added Foresight at lv 18<br> + Added Pluck at lv 22<br> + Added Roost at lv 25<br> + Added Sucker Punch at lv 28<br> + Added FeatherDance at lv 38<br> + Added Nasty Plot at lv 41<br> + Added Brave Bird at lv 49<br> = Moved Leaf Blade from lv 30 to lv 32<br> = Moved Leaf Storm from lv 48 to lv 45<br><br><strong>TMs:</strong><br> + TM16 Light Screen<br> + TM49 Echoed Voice<br> + TM65 Shadow Claw<br> + TM83 Work Up<br> - TM28 Dig<br> - TM31 Brick Break<br> - TM39 Rock Tomb<br> - TM40 Aerial Ace<br> - TM47 Low Sweep<br> - TM56 Fling<br> - TM62 Acrobatics<br> - TM70 Flash<br> - TM80 Rock Slide<br> - TM81 X-Scissor<br> - TM94 Rock Smash<br> - HM04 Strength<br><br>"),
+			"Sceptile" : new PokemonEntry("Decidueye", "254", ["Grass", "Ghost"], ["Treecko", "Grovyle", "Sceptile"], "<span style='font-size: 25px;'>Sceptile - 254</span><br><br>Type: <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/dragon.gif'> -> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/grass.gif'> <img width = '48', height = '18', src = 'https://www.serebii.net/pokedex-bw/type/ghost.gif'><br><strong>Abilities:</strong> Sniper, Super Luck -> Sniper, Overcoat<br><strong>Hidden Ability:</strong> Unburden -> Early Bird<br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 70 => 85</font><br><font color='#500000'>Base Att: 107 => 105</font><br><font color='#005000'>Base Def: 70 => 75</font><br><font color='#500000'>Base SpA: 103 => 100</font><br><font color='#005000'>Base SpD: 70 => 100</font><br><font color='#500000'>Base Spe: 115 => 70</font><br>Att EVs: 0 -> 3<br>Spe EVs: 3 -> 0<br><br><br><strong>Level up moves:</strong><br> - Removed Pound at lv 1<br> - Removed Leer at lv 1<br> - Removed Absorb at lv 1, 6<br> - Removed Quick Attack at lv 1, 11<br> - Removed Night Slash at lv 1, 27<br> - Removed Twister at lv 16<br> - Removed Air Cutter at lv 20<br> - Removed Mega Drain at lv 23<br> - Removed Vicious Slash at lv 36<br> - Removed Drill Run at lv 41<br> - Removed Dragon Pulse at lv 45<br> - Removed Draco Meteor at lv 52<br> + Added Tackle at lv 1<br> + Added Growl at lv 1<br> + Added Shadow Sneak at lv 1<br> + Added Razor Leaf at lv 7<br> + Added Peck at lv 9<br> + Added Astonish at lv 11<br> + Added Focus Energy at lv 14<br> + Added Ominous Wind at lv 16<br> + Added Foresight at lv 18<br> + Added Pluck at lv 22<br> + Added Roost at lv 25<br> + Added Sucker Punch at lv 28<br> + Added Shadow Claw at lv 36<br> + Added FeatherDance at lv 38<br> + Added Nasty Plot at lv 41<br> + Added Brave Bird at lv 49<br> = Moved Leaf Blade from lv 30 to lv 32<br> = Moved Leaf Storm from lv 48 to lv 45<br><br><strong>TMs:</strong><br> + TM16 Light Screen<br> + TM23 Smack Down<br> + TM30 Shadow Ball<br> + TM49 Echoed Voice<br> + TM65 Shadow Claw<br> + TM83 Work Up<br> + TM89 U-Turn<br> - TM01 Hone Claws<br> - TM02 Dragon Claw<br> - TM05 Roar<br> - TM15 Hyper Beam<br> - TM26 Earthquake<br> - TM28 Dig<br> - TM31 Brick Break<br> - TM39 Rock Tomb<br> - TM40 Aerial Ace<br> - TM52 Focus Blast<br> - TM56 Fling<br> - TM70 Flash<br> - TM78 Bulldoze<br> - TM80 Rock Slide<br> - TM81 X-Scissor<br> - TM94 Rock Smash<br> - HM04 Strength<br><br>"),
+			"Lotad" : new PokemonEntry("Lotad", "270", ["Water", "Grass"], ["Lotad", "Lombre", "Ludicolo"], "<span style='font-size: 25px;'>Lotad - 270</span><br><strong>Abilities:</strong> Own Tempo, Rain Dish -> Leaf Guard, Rain Dish<br><strong>Hidden Ability:</strong> Swift Swim -> Swift Swim<br><br><br><br><strong>Level up moves:</strong><br> + Added Weather Ball at lv 12<br> + Added Synthesis at lv 38<br> + Added Fake Out at lv 40<br> + Added SolarBeam at lv 52<br> = Moved Mist from lv 11 to lv 10<br> = Moved Teeter Dance from lv 28 to lv 26<br> = Moved Rain Dance from lv 37 to lv 29<br><br>"),
+			"Lombre" : new PokemonEntry("Lombre", "271", ["Water", "Grass"], ["Lotad", "Lombre", "Ludicolo"], "<span style='font-size: 25px;'>Lombre - 271</span><br><strong>Abilities:</strong> Own Tempo, Rain Dish -> Leaf Guard, Rain Dish<br><strong>Hidden Ability:</strong> Swift Swim -> Swift Swim<br><br><br><br><strong>Level up moves:</strong><br> - Removed Nature Power at lv 7<br> + Added Bubble at lv 7<br> + Added Weather Ball at lv 12<br> + Added Synthesis at lv 38<br> + Added SolarBeam at lv 52<br> = Moved Mist from lv 11 to lv 10<br> = Moved Teeter Dance from lv 28 to lv 26<br> = Moved Rain Dance from lv 37 to lv 29<br><br>"),
+			"Ludicolo" : new PokemonEntry("Ludicolo", "272", ["Water", "Grass"], ["Lotad", "Lombre", "Ludicolo"], "<span style='font-size: 25px;'>Ludicolo - 272</span><br><strong>Abilities:</strong> Own Tempo, Rain Dish -> Leaf Guard, Rain Dish<br><strong>Hidden Ability:</strong> Swift Swim -> Swift Swim<br><br><br><br><strong>Level up moves:</strong><br> - Removed Nature Power at lv 7<br> + Added Bubble at lv 7<br> + Added Weather Ball at lv 12<br> + Added Synthesis at lv 38<br> + Added SolarBeam at lv 52<br> = Moved Mist from lv 11 to lv 10<br> = Moved Teeter Dance from lv 28 to lv 26<br> = Moved Rain Dance from lv 37 to lv 29<br><br>"),
+			"Ralts" : new PokemonEntry("Ralts", "280", ["Psychic", "Psychic"], ["Ralts", "Kirlia", "Gardevoir", "Gallade"], "<span style='font-size: 25px;'>Ralts - 280</span><br><br><br><strong>Evolutions:</strong><br> Kirlia by Level up (Level 17) -> (Level 18)<br><br><strong>Level up moves:</strong><br> + Added Hidden Power at lv 16<br> = Moved Lucky Chant from lv 16 to lv 20<br><br>"),
+			"Kirlia" : new PokemonEntry("Kirlia", "281", ["Psychic", "Psychic"], ["Ralts", "Kirlia", "Gardevoir", "Gallade"], "<span style='font-size: 25px;'>Kirlia - 281</span><br><br><br><br><strong>Level up moves:</strong><br> + Added Hidden Power at lv 16<br> = Moved Lucky Chant from lv 16 to lv 20<br><br>"),
+			"Gardevoir" : new PokemonEntry("Gardevoir", "282", ["Psychic", "Psychic"], ["Ralts", "Kirlia", "Gardevoir", "Gallade"], "<span style='font-size: 25px;'>Gardevoir - 282</span><br><br><br><br><strong>Level up moves:</strong><br> + Added Hidden Power at lv 16<br> = Moved Lucky Chant from lv 16 to lv 20<br><br>"),
+			"Castform" : new PokemonEntry("Castform", "351", ["Normal", "Normal"], ["Castform", "Castform (1)", "Castform (2)", "Castform (3)"], "<span style='font-size: 25px;'>Castform - 351</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 70 => 85</font><br><font color='#005000'>Base Def: 70 => 80</font><br><font color='#005000'>Base SpA: 70 => 90</font><br><font color='#005000'>Base SpD: 70 => 80</font><br><br><br><strong>Level up moves:</strong><br> + Added Aqua Ring at lv 18<br> + Added Flame Charge at lv 24<br> + Added Icy Wind at lv 27<br> + Added Tri Attack at lv 36<br> + Added Recover at lv 42<br> + Added Thunder at lv 46<br> + Added Hurricane at lv 48<br><br><strong>TMs:</strong><br> + TM04 Calm Mind<br> + TM43 Flame Charge<br> + TM79 Frost Breath<br><br>"),
+			"Duskull" : new PokemonEntry("Duskull", "355", ["Ghost", "Ghost"], ["Duskull", "Dusclops", "Dusknoir"], "<span style='font-size: 25px;'>Duskull - 355</span><br><br><br><strong>Evolutions:</strong><br> Dusclops by Level up (Level 37) -> (Level 35)<br><br>"),
+			"Dusclops" : new PokemonEntry("Dusclops", "356", ["Ghost", "Ghost"], ["Duskull", "Dusclops", "Dusknoir"], "<span style='font-size: 25px;'>Dusclops - 356</span><br><br><br><strong>Evolutions:</strong><br> Dusknoir by Evolution stone / Held Item (Reaper Cloth) -> Dusknoir by Evolution stone (Night) (Reaper Cloth)<br><br>"),
+			"Piplup" : new PokemonEntry("Piplup", "393", ["Water", "Water"], ["Piplup", "Prinplup", "Empoleon"], "<span style='font-size: 25px;'>Piplup - 393</span><br><br><br><br><strong>Level up moves:</strong><br> - Removed Bide at lv 28<br> + Added Mud Sport at lv 28<br><br>"),
+			"Prinplup" : new PokemonEntry("Prinplup", "394", ["Water", "Water"], ["Piplup", "Prinplup", "Empoleon"], "<span style='font-size: 25px;'>Prinplup - 394</span><br><br><br><br><strong>Level up moves:</strong><br> - Removed Bide at lv 28<br> + Added Mud Sport at lv 28<br><br>"),
+			"Empoleon" : new PokemonEntry("Empoleon", "395", ["Water", "Steel"], ["Piplup", "Prinplup", "Empoleon"], "<span style='font-size: 25px;'>Empoleon - 395</span><br><br><br><br><strong>Level up moves:</strong><br> - Removed Bide at lv 28<br> + Added Mud Sport at lv 28<br><br>"),
+			"Starly" : new PokemonEntry("Starly", "396", ["Flying", "Flying"], ["Starly", "Staravia", "Staraptor"], "<span style='font-size: 25px;'>Starly - 396</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Peck from lv 9 to lv 7<br> = Moved Double Team from lv 13 to lv 11<br> = Moved Take Down from lv 26 to lv 14<br><br>"),
+			"Buizel" : new PokemonEntry("Buizel", "418", ["Water", "Water"], ["Buizel", "Floatzel"], "<span style='font-size: 25px;'>Buizel - 418</span><br><br><strong>Stats:</strong><br><font color='#500000'>Base Att: 75 => 65</font><br><br><strong>Misc:</strong><br>Level rate: Medium Fast -> Fast<br><br><br><strong>Level up moves:</strong><br> - Removed SonicBoom at lv 1<br> - Removed Water Sport at lv 7<br> - Removed Whirlpool at lv 31<br> - Removed Razor Wind at lv 35<br> + Added Soak at lv 10<br> + Added Low Kick at lv 13<br> + Added Fury Cutter at lv 16<br> + Added Tickle at lv 23<br> + Added Icy Wind at lv 28<br> + Added Baton Pass at lv 32<br> + Added ExtremeSpeed at lv 36<br> + Added Ice Beam at lv 48<br> = Moved Quick Attack from lv 11 to lv 1<br> = Moved Water Gun from lv 15 to lv 7<br> = Moved Swift from lv 21 to lv 19<br> = Moved Aqua Jet from lv 24 to lv 21<br> = Moved Agility from lv 41 to lv 25<br> = Moved Double Hit from lv 27 to lv 29<br> = Moved Pursuit from lv 18 to lv 39<br> = Moved Aqua Tail from lv 38 to lv 42<br> = Moved Hydro Pump from lv 45 to lv 52<br><br>"),
+			"Floatzel" : new PokemonEntry("Floatzel", "419", ["Water", "Water"], ["Buizel", "Floatzel"], "<span style='font-size: 25px;'>Floatzel - 419</span><br><br><br><strong>Misc:</strong><br>Level rate: Medium Fast -> Fast<br><br><br><strong>Level up moves:</strong><br> - Removed SonicBoom at lv 1<br> - Removed Crunch at lv 1<br> - Removed Water Sport at lv 1, 7<br> - Removed Ice Fang at lv 1<br> - Removed Razor Wind at lv 41<br> + Added Ice Punch at lv 1<br> + Added Soak at lv 10<br> + Added Low Kick at lv 13<br> + Added Fury Cutter at lv 16<br> + Added Tickle at lv 23<br> + Added Icy Wind at lv 28<br> + Added Baton Pass at lv 32<br> = Moved Water Gun from lv 15 to lv 7<br> = Moved Swift from lv 21 to lv 19<br> = Moved Aqua Jet from lv 24 to lv 21<br> = Moved Agility from lv 51 to lv 25<br> = Moved ExtremeSpeed from lv 44 to lv 36<br> = Moved Pursuit from lv 18 to lv 39<br> = Moved Aqua Tail from lv 34 to lv 42<br> = Moved Hydro Pump from lv 54 to lv 52<br><br><strong>TMs:</strong><br> + TM83 Work Up<br><br>"),
+			"Buneary" : new PokemonEntry("Buneary", "427", ["Normal", "Normal"], ["Buneary", "Lopunny"], "<span style='font-size: 25px;'>Buneary - 427</span><br><br><strong>Stats:</strong><br><font color='#500000'>Base Spe: 85 => 65</font><br><br><br><strong>Level up moves:</strong><br> = Moved Fake Out from lv 22 to lv 14<br> = Moved Quick Attack from lv 14 to lv 22<br><br>"),
+			"Lopunny" : new PokemonEntry("Lopunny", "428", ["Normal", "Fighting"], ["Buneary", "Lopunny"], "<span style='font-size: 25px;'>Lopunny - 428</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Fake Out from lv 22 to lv 14<br> = Moved Quick Attack from lv 14 to lv 22<br><br>"),
+			"Pignite" : new PokemonEntry("Pignite", "499", ["Normal", "Fire"], ["Tepig", "Pignite", "Emboar"], "<span style='font-size: 25px;'>Pignite - 499</span><br><br><strong>Stats:</strong><br><font color='#500000'>Base Hp: 90 => 85</font><br><br><br>"),
+			"Munna" : new PokemonEntry("Munna", "517", ["Psychic", "Psychic"], ["Munna", "Musharna"], "<span style='font-size: 25px;'>Munna - 517</span><br><strong>Abilities:</strong> Forewarn, Synchronize -> Levitate, Synchronize<br><strong>Hidden Ability:</strong> Telepathy -> Telepathy<br><br><strong>Stats:</strong><br><font color='#005000'>Base Att: 25 => 35</font><br><br><br><strong>Level up moves:</strong><br> - Removed Psywave at lv 1<br> + Added Tackle at lv 1<br> + Added Protect at lv 24<br> + Added Wish at lv 25<br> = Moved Confusion from lv 11 to lv 7<br> = Moved Yawn from lv 7 to lv 11<br> = Moved Psybeam from lv 23 to lv 21<br> = Moved Synchronoise from lv 25 to lv 27<br> = Moved Future Sight from lv 31 to lv 32<br><br>"),
+			"Musharna" : new PokemonEntry("Musharna", "518", ["Psychic", "Psychic"], ["Munna", "Musharna"], "<span style='font-size: 25px;'>Musharna - 518</span><br><strong>Abilities:</strong> Unaware, Synchronize -> Levitate, Synchronize<br><strong>Hidden Ability:</strong> Telepathy -> Telepathy<br><br><br><br><strong>Level up moves:</strong><br> - Removed Psywave at lv 1<br> - Removed Meditate at lv 50<br> + Added Tackle at lv 1<br> + Added Protect at lv 24<br> + Added Wish at lv 25<br> = Moved Confusion from lv 11 to lv 7<br> = Moved Yawn from lv 7 to lv 11<br> = Moved Psybeam from lv 23 to lv 21<br> = Moved Synchronoise from lv 25 to lv 27<br> = Moved Future Sight from lv 31 to lv 32<br><br>"),
+			"Pidove" : new PokemonEntry("Pidove", "519", ["Normal", "Flying"], ["Pidove", "Tranquill", "Unfezant"], "<span style='font-size: 25px;'>Pidove - 519</span><br><br><br><strong>Evolutions:</strong><br> Tranquill by Level up (Level 21) -> (Level 19)<br><br><strong>Level up moves:</strong><br> = Moved Roost from lv 18 to lv 13<br> = Moved Air Cutter from lv 15 to lv 17<br><br>"),
+			"Tranquill" : new PokemonEntry("Tranquill", "520", ["Ice", "Flying"], ["Pidove", "Tranquill", "Unfezant"], "<span style='font-size: 25px;'>Tranquill - 520</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Roost from lv 18 to lv 13<br> = Moved Air Cutter from lv 15 to lv 17<br> = Moved Powder Snow from lv 21 to lv 19<br><br>"),
+			"Unfezant" : new PokemonEntry("Unfezant", "521", ["Ice", "Flying"], ["Pidove", "Tranquill", "Unfezant"], "<span style='font-size: 25px;'>Unfezant - 521</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Roost from lv 18 to lv 13<br> = Moved Air Cutter from lv 15 to lv 17<br> = Moved Powder Snow from lv 21 to lv 19<br><br>"),
+			"Minccino" : new PokemonEntry("Minccino", "572", ["Normal", "Normal"], ["Minccino", "Cinccino"], "<span style='font-size: 25px;'>Minccino - 572</span><br><br><br><br><strong>Level up moves:</strong><br> = Moved Encore from lv 13 to lv 10<br> = Moved Tickle from lv 9 to lv 13<br><br><strong>TMs:</strong><br> - TM83 Work Up<br><br>"),
+			"Cinccino" : new PokemonEntry("Cinccino", "573", ["Normal", "Normal"], ["Minccino", "Cinccino"], "<span style='font-size: 25px;'>Cinccino - 573</span><br><br><strong>Stats:</strong><br><font color='#500000'>Base Att: 100 => 95</font><br><font color='#500000'>Base Def: 70 => 65</font><br><font color='#005000'>Base Spe: 105 => 115</font><br><br><br>"),
+			"Castform (1)" : new PokemonEntry("Castform", "351", ["Fire", "Fire"], ["Castform (1)", "Castform", "Castform (2)", "Castform (3)"], "<span style='font-size: 25px;'>Castform (1) - 351</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 70 => 85</font><br><font color='#005000'>Base Att: 70 => 80</font><br><font color='#005000'>Base SpA: 70 => 110</font><br><font color='#005000'>Base Spe: 70 => 95</font><br><br><br><strong>Level up moves:</strong><br> + Added Aqua Ring at lv 18<br> + Added Flame Charge at lv 24<br> + Added Icy Wind at lv 27<br> + Added Tri Attack at lv 36<br> + Added Recover at lv 42<br> + Added Thunder at lv 46<br> + Added Hurricane at lv 48<br> = Moved Headbutt from lv 20 to lv 15<br> = Moved Rain Dance from lv 30 to lv 20<br> = Moved Sunny Day from lv 30 to lv 20<br> = Moved Hail from lv 30 to lv 20<br> = Moved Weather Ball from lv 40 to lv 30<br> = Moved Hydro Pump from lv 50 to lv 40<br> = Moved Blizzard from lv 50 to lv 40<br> = Moved Fire Blast from lv 50 to lv 40<br><br><strong>TMs:</strong><br> + TM04 Calm Mind<br> + TM43 Flame Charge<br> + TM79 Frost Breath<br><br>"),
+			"Castform (2)" : new PokemonEntry("Castform", "351", ["Water", "Water"], ["Castform (2)", "Castform", "Castform (1)", "Castform (3)"], "<span style='font-size: 25px;'>Castform (2) - 351</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 70 => 85</font><br><font color='#005000'>Base Def: 70 => 80</font><br><font color='#005000'>Base SpA: 70 => 95</font><br><font color='#005000'>Base SpD: 70 => 110</font><br><br><br><strong>Level up moves:</strong><br> + Added Aqua Ring at lv 18<br> + Added Flame Charge at lv 24<br> + Added Icy Wind at lv 27<br> + Added Tri Attack at lv 36<br> + Added Recover at lv 42<br> + Added Thunder at lv 46<br> + Added Hurricane at lv 48<br> = Moved Headbutt from lv 20 to lv 15<br> = Moved Rain Dance from lv 30 to lv 20<br> = Moved Sunny Day from lv 30 to lv 20<br> = Moved Hail from lv 30 to lv 20<br> = Moved Weather Ball from lv 40 to lv 30<br> = Moved Hydro Pump from lv 50 to lv 40<br> = Moved Blizzard from lv 50 to lv 40<br> = Moved Fire Blast from lv 50 to lv 40<br><br><strong>TMs:</strong><br> + TM04 Calm Mind<br> + TM43 Flame Charge<br> + TM79 Frost Breath<br><br>"),
+			"Castform (3)" : new PokemonEntry("Castform", "351", ["Ice", "Ice"], ["Castform (3)", "Castform", "Castform (1)", "Castform (2)"], "<span style='font-size: 25px;'>Castform (3) - 351</span><br><br><strong>Stats:</strong><br><font color='#005000'>Base Hp: 70 => 85</font><br><font color='#005000'>Base Def: 70 => 110</font><br><font color='#005000'>Base SpD: 70 => 95</font><br><font color='#005000'>Base Spe: 70 => 80</font><br><br><br><strong>Level up moves:</strong><br> + Added Aqua Ring at lv 18<br> + Added Flame Charge at lv 24<br> + Added Icy Wind at lv 27<br> + Added Tri Attack at lv 36<br> + Added Recover at lv 42<br> + Added Thunder at lv 46<br> + Added Hurricane at lv 48<br> = Moved Headbutt from lv 20 to lv 15<br> = Moved Rain Dance from lv 30 to lv 20<br> = Moved Sunny Day from lv 30 to lv 20<br> = Moved Hail from lv 30 to lv 20<br> = Moved Weather Ball from lv 40 to lv 30<br> = Moved Hydro Pump from lv 50 to lv 40<br> = Moved Blizzard from lv 50 to lv 40<br> = Moved Fire Blast from lv 50 to lv 40<br><br><strong>TMs:</strong><br> + TM04 Calm Mind<br> + TM43 Flame Charge<br> + TM79 Frost Breath<br><br>"),
+		};
+
+		type1Colors = {
+			"Normal" : "#C6C6A7",
+			"Grass" : "#A7DB8D",
+			"Fire" : "#F5AC78",
+			"Water" : "#9DB7F5",
+			"Electric" : "#FAE078",
+			"Ice" : "#BCE6E6",
+			"Bug" : "#C6D16E",
+			"Poison" : "#C183C1",
+			"Flying" : "#C6B7F5",
+			"Fighting" : "#D67873",
+			"Rock" : "#D1C17D",
+			"Ground" : "#EBD69D",
+			"Psychic" : "#FA92B2",
+			"Dark" : "#A29288",
+			"Ghost" : "#A292BC",
+			"Dragon" : "#A27DFA",
+			"Steel" : "#D1D1E0",
+		};
+
+		type2Colors = {
+			"Normal" : "#6D6D4E",
+			"Grass" : "#4E8234",
+			"Fire" : "#9C531F",
+			"Water" : "#445E9C",
+			"Electric" : "#A1871F",
+			"Ice" : "#638D8D",
+			"Bug" : "#6D7815",
+			"Poison" : "#682A68",
+			"Flying" : "#6D5E9C",
+			"Fighting" : "#7D1F1A",
+			"Rock" : "#786824",
+			"Ground" : "#927D44",
+			"Psychic" : "#A13959",
+			"Dark" : "#49392F",
+			"Ghost" : "#493963",
+			"Dragon" : "#4924A1",
+			"Steel" : "#787887",
+		};
+
+
+	</script>
+
+	<BODY style = 'background-color: deepskyblue;'>
+		<Header>
+			<H1 id = "title">Changelog</H1>
+		</Header>
+		
+		<section>
+			<button id="home" onclick="SetupPokemonButtons()">Home</button>
+			<p id = "textbox"></p>
+			<button id="home2" onclick="SetupPokemonButtons()">Home</button>
+		</section>
+		
+		<script>
+			function SetupPokemonButtons()
+			{
+				document.getElementById('textbox').innerHTML = "";
+				for (let id in pokemon)
+				{
+					if (id.includes("Egg")) {break;}
+					
+					if (pokemon[id].forms[0] != id) continue;
+
+					var b = document.createElement("button");
+					b.style.backgroundColor = type1Colors[pokemon[id].types[0]];
+					b.innerHTML = "<img src='https://www.serebii.net/blackwhite/pokemon/" + pokemon[id].sprID + ".png' alt='buttonpng' border='2'/><br><span style='font-size: 16px;'>" + id + "</span>";
+					b.addEventListener ("click", function() {
+						OpenPokemon(id);
+					});
+					document.getElementById("textbox").appendChild(b);
+				}
+			}
+
+			function OpenPokemon(pokemonID)
+			{
+				document.getElementById('textbox').innerHTML = "";
+				for (let id in pokemon[pokemonID].forms)
+				{
+					form = pokemon[pokemonID].forms[id];
+					document.getElementById('textbox').innerHTML += "<img src='https://www.serebii.net/blackwhite/pokemon/" + pokemon[form].sprID + ".png' alt='buttonpng' width = '256' height = '256' style='border: 8px outset " + type2Colors[pokemon[form].types[0]] + "; background-color: " + type1Colors[pokemon[form].types[1]] + "; text-align: center; display: inline-block; vertical-align: top'/>";
+					document.getElementById('textbox').innerHTML += "<div style='width: 800; border: 8px outset " + type2Colors[pokemon[form].types[1]] + "; background-color: " + type1Colors[pokemon[form].types[0]] + "; text-align: center; display: inline-block;'>" + pokemon[form].desc + "</div><br><br>";
+				}
+				document.body.scrollTop = 0;
+			}
+
+			SetupPokemonButtons();
+		</script>
+	</BODY>
+</HTML>
