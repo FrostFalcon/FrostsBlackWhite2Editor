@@ -105,7 +105,7 @@ Elite 4 - 70
 
 Champion - 72
 
-Finally, note that this hack is still in development. The current version is 0.14.0, which has the main story progression mostly complete. New story content is being added gradually as I see fit. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
+Finally, note that this hack is still in development. The current version is 0.15.0, which has the main story progression mostly complete. New story content is being added gradually as I see fit. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
 
 # Some notable issues with the editor:
 
