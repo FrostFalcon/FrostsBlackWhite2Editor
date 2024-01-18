@@ -34,6 +34,8 @@ __Custom Game Modes:__ These use blanket statements to apply special rules to th
 __NARC Replace:__ NARCs are a special file type used to store data in roms. They are also what the editor works with behind the scenes. This feature lets you replace an entire NARC file with the same one from another rom. This may come in handy if you broke your rom and you don't want to revert everything to a previous version. You can see what all of the NARCs are here: https://projectpokemon.org/home/docs/gen-5/b2w2-file-system-r8/
 There is also a similar functionality for replacing pokemon icons and sounds. I wouldn't suggest using this.
 
+__Sound Replace, Icon Replace, Sound Patch:__ Experimental features, do not use
+
 __Auto Loading:__ A simple quality of life feature that will automatically load the given rom whenever you start the editor.
 
 # Custom Gamemodes
@@ -61,6 +63,7 @@ After applying the hack to your rom, start by saving your run right away. Every 
 # NCB2bw2Patch
 
 This is the main rom hack for black 2 (untested for white 2) that I made the editor for. It features revamped trainer battles, pokemon reworks, and massively expanded route encounters all specifically designed with a nuzzlocke and level caps in mind while keeping the core of the game intact. You can apply this patch to a vanilla rom (which is not provided) and try it yourself if you are interested in a challenge. This is also compatable with Slay the Spoink, helping make several pokemon stronger and more interesting.
+This repository contains .bw2Patch files which work with the editor and can be applied to already edited roms. It also includes a .xdelta patch file for use with the Delta Patcher. the delta patch must be applied to an unmodified rom. These should produce the same output, so use whichever method you prefer.
 
 There are a few major additions to the progression of this rom hack:
 
@@ -107,7 +110,7 @@ Elite 4 - 70
 
 Champion - 72
 
-Finally, note that this hack is still in development. The current version is 0.15.0, which has the main story progression mostly complete. New story content is being added gradually as I see fit. Some side area trainers might have been missed, there is no post game, and the Kyurem fight before Ghetsis is underleveled.
+Finally, note that this hack is still in development. The current version is 0.15.2, which has the main story progression mostly complete. New story content is being added gradually as I see fit. Some side area trainers might have been missed, there is no post game, and certain aspects like the ingame pokedex have not been updated to match the changes.
 
 # Some notable issues with the editor:
 
