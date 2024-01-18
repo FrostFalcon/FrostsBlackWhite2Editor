@@ -69,7 +69,9 @@ After you complete the quest in Flocessy Ranch. Going north of the trainer schoo
 After you beat the first gym, there's an optional fight with Alder with a powerful reward that can only be fought before you get the second gym badge.
 Pinwheel Forest and Nacrene City are now accessible during the game. Keep in mind there are many high level trainers here. You are meant to start exploring these areas before you beat the bug gym and come back after you beat it.
 There is an optional story event in Nacrene City where you fight Lenora and Cheren in a double battle. This also has a strong reward for beating it.
-Clay Tunnel is also accessible now
+Clay Tunnel is also accessible now.
+
+A full list of pokemon changes can be found here: https://frostfalcon.github.io/NCB2Changelog/
 
 Keep in mind this hack is extremely difficult. You shouldn't expect to beat it on your first few tries, but the increased pokemon variety should ensure that no two runs feel the same. Also the pokemon were balanced with strict level caps in mind, so I highly suggest following them. The level caps are as follows:
 

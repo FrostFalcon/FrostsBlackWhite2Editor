@@ -27,3 +27,12 @@
 0.14.0
 
  - Experimental addition of Rowlet over Treeko
+
+
+
+
+0.15.2
+
+ - Added seasonal encounter variants to some routes
+
+
