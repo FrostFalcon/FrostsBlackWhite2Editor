@@ -27,14 +27,11 @@ __Encounter Editor:__ Lets you edit the pokemon encounter pools throughout the g
 
 __Shop Editor:__ Lets you modify the contents of in game shops. Removing items from shops is kind of buggy.
 
-__Patching:__ You can create and apply patches to send other people hacks. Normally, the patch will include data from all of the NARC files you have loaded. You can choose to exclude certain NARCs to reduce the file size since NARC sizes are not created equal, and some are significantly bigger than others.
+__Patching:__ You can create and apply patches to send other people hacks. Normally, the patch will include data from all of the NARC, sound, and overlay files you have loaded that are different from a provided vanilla rom. You can choose to only include specific NARCs if you so choose.
+
+__Rom Dumping:__ Lets you save a rom as its individual components (NARCs, overlays, etc.) in a designated folder for external editing. __Load Folder__ takes the resulting file system and rebuilds the rom.
 
 __Custom Game Modes:__ These use blanket statements to apply special rules to the game. You can read more about them in the Lite version of the editor.
-
-__NARC Replace:__ NARCs are a special file type used to store data in roms. They are also what the editor works with behind the scenes. This feature lets you replace an entire NARC file with the same one from another rom. This may come in handy if you broke your rom and you don't want to revert everything to a previous version. You can see what all of the NARCs are here: https://projectpokemon.org/home/docs/gen-5/b2w2-file-system-r8/
-There is also a similar functionality for replacing pokemon icons and sounds. I wouldn't suggest using this.
-
-__Sound Replace, Icon Replace, Sound Patch:__ Experimental features, do not use
 
 __Auto Loading:__ A simple quality of life feature that will automatically load the given rom whenever you start the editor.
 
@@ -43,6 +40,7 @@ __Auto Loading:__ A simple quality of life feature that will automatically load 
 ## Type Swap
 
 A custom gamemode that systematically replaces the types of every pokemon and move for a new type. You can create your own type mapping, use one of a few presets, or randomize the types.
+Additionally, this feature can randomize type effectiveness if you so choose.
 
 ## Preset Moves
 
@@ -68,13 +66,13 @@ This repository contains .bw2Patch files which work with the editor and can be a
 There are a few major additions to the progression of this rom hack:
 
 First, before you meet Bianca to receive your starter, You can enter the house to the right of the lookout and talk to the ditto there. It will give you a random starter from any generation. After receiving your starter, you can go back to Bianca and continue as normal. You still have to get your usual starter to progress the story. In a typical run, I pick the starter with the same element as the one ditto gave me, (this is important so your rival gets the right starter) and release it after the first rival battle.
-After you complete the quest in Flocessy Ranch. Going north of the trainer school into Pledge Grove, you'll find a scientist studying the rock formation. He is a difficult optional trainer that you can fight before the first gym. Beating him will reward you with a fishing rod which can be used to get extra early game encounters in Aspertia City and Virbank City. The rest of the game plays out as normal.
+After you complete the quest in Flocessy Ranch. Going north of the trainer school into Pledge Grove, you'll find a scientist studying the rock formation. He is a difficult optional trainer that you can fight before the first gym. Beating him will reward you with a fishing rod which can be used to get extra early game encounters in Aspertia City and Virbank City.
 After you beat the first gym, there's an optional fight with Alder with a powerful reward that can only be fought before you get the second gym badge.
-Pinwheel Forest and Nacrene City are now accessible during the game. Keep in mind there are many high level trainers here. You are meant to start exploring these areas before you beat the bug gym and come back after you beat it.
+Pinwheel Forest and Nacrene City are now accessible during the main story. Keep in mind there are many high level trainers here. You are meant to start exploring these areas before you beat the bug gym and come back after you beat it.
 There is an optional story event in Nacrene City where you fight Lenora and Cheren in a double battle. This also has a strong reward for beating it.
 Clay Tunnel is also accessible now.
 
-A full list of pokemon changes can be found here: https://frostfalcon.github.io/NCB2Changelog/
+A full list of pokemon changes can be found here: https://frostfalcon.github.io/NCB2/
 
 Keep in mind this hack is extremely difficult. You shouldn't expect to beat it on your first few tries, but the increased pokemon variety should ensure that no two runs feel the same. Also the pokemon were balanced with strict level caps in mind, so I highly suggest following them. The level caps are as follows:
 
@@ -110,11 +108,11 @@ Elite 4 - 70
 
 Champion - 72
 
-Finally, note that this hack is still in development. The current version is 0.15.2, which has the main story progression mostly complete. New story content is being added gradually as I see fit. Some side area trainers might have been missed, there is no post game, and certain aspects like the ingame pokedex have not been updated to match the changes.
+Finally, note that this hack is still in development. The current version is 0.15.4, which has the main story progression mostly complete. New story content is being added gradually as I see fit. Some side area trainers might have been missed, there is no post game, and certain aspects like the ingame pokedex have not been updated to match the changes.
 
 # Some notable issues with the editor:
 
-The editor may not be compatible with some other editors. Attempting to use this in conjunction with another editor to make a single hack likely won't work.
+The editor may not be compatible with some other editors. Attempting to use this in conjunction with another editor to make a single hack may not work.
 
 Script and overworld editing is unstable when working with existing story related elements. While these tools are very powerful and can do a lot in terms of writing custom scenes, even working in the same areas as certain cutscenes may break them.
 
